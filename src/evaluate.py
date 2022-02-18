@@ -247,7 +247,7 @@ def main():
                             to_print['incorrect'] = incorrect_segments
 
                         print(json.dumps(to_print))
-                        json_out(json.dumps(to_print))
+                        json_out.write(json.dumps(to_print))
                     else:
                         print(
                             f'Issues identified for {video_id} (#{video_index})')
